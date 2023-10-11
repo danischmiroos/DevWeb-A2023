@@ -48,6 +48,14 @@ Cherchez, via Devdocs ou via le MDN
 
 */
 
+let test1 = document.createElement("a")
+
+test1.setAttribute("href","https://en.wikipedia.org/wiki/JavaScript")
+
+test1.innerHTML = "Javascript"
+
+document.body.appendChild(test1)
+
 /* APPLICATION DE VOS CONNAISSANCES I
 
 Ajoutez à la page index.html, grâce au Javascript
