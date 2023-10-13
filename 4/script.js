@@ -55,6 +55,49 @@ test1.setAttribute("href","https://en.wikipedia.org/wiki/JavaScript")
 test1.innerHTML = "Javascript"
 
 document.body.appendChild(test1)
+/* 1. lien est fait */
+
+let img1 = document.createElement("img")
+
+img1.setAttribute("src","https://i.redd.it/djmju4y9ngn51.jpg")
+
+document.body.appendChild(img1)
+/* 2. image est faite */
+
+let prgphe1 = document.createElement("p")
+
+prgphe1.innerHTML = "je déteste la COVID"
+
+document.body.appendChild(prgphe1)
+/* 3. paragraphe est fait */
+
+let br1 = document.createElement("br")
+
+document.body.appendChild(br1)
+/* 4. br est fait */
+
+document.body.style.backgroundColor = "red"
+/* 5. couleur de fond */
+
+prgphe1.classList.add('enBleu')
+/* 7. liez classe liste au paragraphe est fait */
+
+let liste1 = document.createElement("ul")
+
+let li1 = document.createElement("li")
+
+let li2 = document.createElement("li")
+
+li1.innerHTML = "premier point"
+
+li2.innerHTML = "deuxième point"
+
+document.body.appendChild(liste1)
+
+liste1.appendChild(li1)
+
+liste1.appendChild(li2)
+/* 8. liste d'élément est faite */
 
 /* APPLICATION DE VOS CONNAISSANCES I
 
