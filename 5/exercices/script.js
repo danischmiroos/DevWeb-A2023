@@ -5,6 +5,12 @@ Exercices sur les fonctions:
 
 1. Créez une fonction nommée `helloWorld` qui écrit "Hello world !" dans la console.
 
+*/
+
+console.log('Hello, World!')
+
+/*
+
 2. Créez une fonction nommée `doubler` qui prend un argument, que vous pouvez par exemple appeler `valeur`, et qui retourne la valeur entrée en argument additionnée à elle-même. 
 
 Résultats attendus :
@@ -14,6 +20,19 @@ doubler(30); // 60
 doubler('1'); // "11"
 doubler('Salut !'); // "Salut !Salut !"
 
+*/
+
+function doubler(nombre1) {
+    return nombre1 + nombre1
+}
+
+console.log(doubler(5))
+console.log(doubler(30))
+console.log(doubler('1'))
+console.log(doubler('Salut !'))
+
+/*
+
 3. Créez une fonction nommée `doublerChiffre` qui prend un argument, que vous pouvez par exemple appeler `chiffre`, et qui retourne le double de la valeur entrée. 
 
 Résultat attendus :
@@ -21,6 +40,18 @@ Résultat attendus :
 doublerChiffre(5); // 10
 doublerChiffre(10); // 20
 doublerChiffre('Pas un chiffre'); // NaN (qui veut littéralement dire "Not a Number")
+
+*/
+
+function doublerChiffre(nombre1) {
+    return nombre1 *2
+}
+
+console.log(doublerChiffre(5))
+console.log(doublerChiffre(10))
+console.log(doublerChiffre('Pas un nombre'))
+
+/*
 
 4. Créez une fonction nommée `sommeDeuxValeurs` qui prend deux arguments, que vous pouvez nommer par exemple `valeur1` et `valeur2`, et qui retourne la somme des deux valeurs. 
 
@@ -30,7 +61,31 @@ sommeDeuxValeurs(5, 10); // 15
 sommeDeuxValeurs(doubler(5), 20); // 30
 sommeDeuxValeurs('Salut ', 'ça va ?'); // "Salut ça va ?"
 
+*/
+
+function sommeDeuxValeurs(valeur1, valeur2) {
+    return valeur1 + valeur2
+}
+
+console.log(sommeDeuxValeurs(5, 10))
+console.log(sommeDeuxValeurs(doubler(5), 20))
+console.log(sommeDeuxValeurs('Salut ', 'ça va?'))
+
+/*
+
 5. Créer une fonction `sommerTroisNombres` qui prend 3 nombres comme paramètres et retourne leur somme dans la console.
+
+*/
+
+function sommerTroisNombres(valeur1, valeur2, valeur3) {
+    return valeur1 + valeur2 + valeur3
+}
+
+console.log(sommerTroisNombres(1, 2, 3))
+console.log(sommerTroisNombres(123, 456, 789))
+console.log(sommerTroisNombres('Math','émat','iques'))
+
+/*
 
 6. Créez une variable `chiffre` qui vaut `1` ainsi qu'une fonction `ajouterUn` qui va ajouter 1 à `chiffre`.
 
@@ -43,6 +98,17 @@ ajouterUn();
 // Si on affiche "chiffre" maintenant...
 console.log(chiffre); // 2
 
+
+*/
+
+let chiffre = 1;
+
+chiffre = chiffre + 1;
+
+console.log(chiffre)
+
+/*
+
 7. Créez une fonction `derniereLettre` qui prend un argument, que vous pouvez par exemple appeler `chaine`, qui retourne la dernière lettre d'une chaîne de caractère. 
 
 Résultat attendu :
@@ -50,6 +116,16 @@ Résultat attendu :
 derniereLettre('Salut !'); // "!"
 derniereLettre("Mais c'est génial ce truc, dis donc"); // "c"
 derniereLettre('a'); // "a"
+
+*/
+
+function derniereLettre(chaine) {
+    return chaine
+}
+
+console.log(derniereLettre('asdf'))
+
+/*
 
 8. Créez une fonction `quadrupler` qui utiliser la fonction `doubler` créée plus haut et qui retourne le quadruple de la valeur donnée en arguent.
 
@@ -59,6 +135,19 @@ quadrupler(5); // 20
 quadrupler(30); // 120
 quadrupler('1'); // "1111"
 quadrupler('Salut !'); // "Salut !Salut !Salut !Salut !"
+
+*/
+
+function quadrupler(chiffre1) {
+    return chiffre1 + chiffre1 + chiffre1 + chiffre1
+}
+
+console.log(quadrupler(5))
+console.log(quadrupler(30))
+console.log(quadrupler('1'))
+console.log(quadrupler('Salut !'))
+
+/*
 
 Appeler des fonctions:
 
