@@ -195,14 +195,52 @@ Depuis script.js:
 
 14. Dans le fichier "script.js", créez un bouton avec createElement('input').
 
+*/
+
+let monBouton = document.createElement("button")
+
+monBouton.setAttribute("btn","bouton")
+
+document.body.appendChild(monBouton)
+
+/*
+
 15. Attribuez du texte à ce bouton (en utilisant setAttribute par exemple).
 
+*/
+
+monBouton.innerHTML="n'appuie pas"
+
+/*
+
 16. À l'aide de addEventListener(), faites en sorte que ce bouton déclenche la fonction (1.) lorsqu'on clique dessus. 
+
+*/
+
+monBouton.addEventListener("click", function() {
+    console.log("Hello, World!")
+})
+
+/*
 
 Interactions:
 
 17. En Javascript, créez un apragraphe et donnez lui un texte.
 
-18. Rendez ce paragraphe clickable en utilisant addEventListener() (vous pouvez lui attribuer la fonction de votre choix).
 */
 
+let monParagraphe = document.createElement("paragraphe")
+
+monParagraphe.innerHTML="ce paragraphe a du texte"
+
+document.body.appendChild(monParagraphe)
+
+/*
+
+18. Rendez ce paragraphe clickable en utilisant addEventListener() (vous pouvez lui attribuer la fonction de votre choix).
+
+*/
+
+monParagraphe.addEventListener("click", function() {
+    window.alert("alerte")
+})
