@@ -153,9 +153,29 @@ Appeler des fonctions:
 
 8. Appelez la fonction crée en (1.).
 
+*/
+
+console.log('Hello, World!')
+
+/*
+
 9. Appelez la fonction crée en (5.).
 
+*/
+
+console.log(sommerTroisNombres(123, 456, 789))
+
+/*
+
 10. Créez une variable nommée "resultat" et affectez lui la valeur de retour de la fonction `doubler` du point (2.). Affichez "resultat" dans la console.
+
+*/
+
+let resultat;
+resultat = doubler
+console.log(resultat(12))
+
+/*
 
 Quelles différences notez-vous entre ces trois fonctions?
 
