@@ -7,7 +7,9 @@ Exercices sur les fonctions:
 
 */
 
-console.log('Hello, World!')
+function helloWorld() {
+    console.log("Hello World!")   
+}
 
 /*
 
@@ -93,7 +95,7 @@ Résultat attendu:
 
 let chiffre = 1;
 
-ajouterUn();
+chiffre = ajouterUn(chiffre);
 
 // Si on affiche "chiffre" maintenant...
 console.log(chiffre); // 2
@@ -101,11 +103,11 @@ console.log(chiffre); // 2
 
 */
 
-let chiffre = 1;
+let chiffre = 1
 
-chiffre = chiffre + 1;
-
-console.log(chiffre)
+function ajouterUn(valeurAModifier) {
+    return valeurAModifier +=1
+}
 
 /*
 
@@ -120,7 +122,9 @@ derniereLettre('a'); // "a"
 */
 
 function derniereLettre(chaine) {
-    return chaine
+    return chaine[chaine.length-1]
+    // chaine.slice(-1)
+    // chaine.charAt(chaine.length-1)
 }
 
 console.log(derniereLettre('asdf'))
